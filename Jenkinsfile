@@ -18,5 +18,9 @@ stages{
             echo "test code"
              }
           }
+	 stage('final'){
+	 steps { echo "final"
+	 }
       }
+ }
  }
