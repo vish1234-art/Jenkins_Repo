@@ -5,21 +5,21 @@ agent any
 stages{
         stage('SCM'){
             steps{
-                echo "git pull code"
+                 git 'https://github.com/vimallinuxworld13/simple-java-maven-app.git'
              }
          }
         stage('Deploy'){
              steps{
-                  echo "deploy code" 
+                  sh 'mvn clean package'
               }
          }
         stage('Test'){
         steps{ 
-            echo "test code"
+              sh 'java -jar target/*.jar'
              }
           }
 	 stage('final'){
-	 steps { echo "final"
+	 steps { archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
 	 }
       }
  }
