@@ -18,7 +18,7 @@ stages{
             echo "test code"
              }
           }
-	stage("Deploy to prod"){
+	stage('Deploy to prod'){
 	steps{
 	     echo "App deployed"
 	     }
