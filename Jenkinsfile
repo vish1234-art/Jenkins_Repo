@@ -18,15 +18,5 @@ stages{
             echo "test code"
              }
           }
-	stage('Deploy to prod'){
-	steps{
-	     echo "App deployed"
-	     }
-	     }
-	stage('final1'){
-	     {
-	     echo "fina9l"
-	     }
-	     }
       }
  }
