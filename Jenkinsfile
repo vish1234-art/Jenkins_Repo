@@ -23,5 +23,10 @@ stages{
 	     echo "App deployed"
 	     }
 	     }
+	stage('final'){
+	     {
+	     echo "final"
+	     }
+	     }
       }
  }
