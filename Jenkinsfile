@@ -23,9 +23,9 @@ stages{
 	     echo "App deployed"
 	     }
 	     }
-	stage('final'){
+	stage('final1'){
 	     {
-	     echo "final"
+	     echo "fina9l"
 	     }
 	     }
       }
